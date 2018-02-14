@@ -1,0 +1,24 @@
+<div id="contact-form"
+  style="font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+     <form id= "contact" method="post" action="">
+	 <fieldset>
+	       <label for="name">Name</label>
+		   <input type="text" name="name" required 
+		   pattern="[А-Я, Є, Ї] {10}" 
+		   title="Name is kirilik letters">
+		</fieldset>
+		<fieldset>
+		   <label for="email">Email</label>
+		   <input type="email" name="email" required 
+		   pattern="[A-Z]{10}" 
+		   title="E-mail is 10 letters">
+		</fieldset>	
+        <fieldset>
+		   <label for="age">Age</label>
+		   <input type="number" name="age" min="1" max="99"
+		   required 
+		   pattern="[1-9]{2}"
+		   title="Age is less 3 digits">
+		</fieldset>			
+		</form>
+		</div> <!-- end of contact-form -->
