@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="./css/form.css">
+</head>
+<body>
+<div id="contact-form"
+  style="font-family: 'Arial Narrow', 'Nimbus Sans L', 'sans-serif'/">
+     <form id="contact" method="post" action="">
+	 <fieldset class="inputwithlabel">
+	       <label for="name">Name</label>
+		   <input type="name" name="name" required 
+		   pattern="[А-Я, Є, Ї] {10}" 
+		   title="Name is chirilik letters">
+		</fieldset>
+		<fieldset class="inputwithlabel">
+		   <label for="email">Email</label>
+		   <input type="email" name="email" required 
+		   pattern="[A-Z]{10}" 
+		   title="E-mail is 10 letters">
+		</fieldset>	
+    <fieldset class="inputwithlabel">
+    <label for="telephone">Phone</label>
+  <input type="number" name="usrtel" required
+       pattern="[0-9]{10}"
+       title="Number consists from digits">
+    </fieldset>
+        <fieldset class="inputwithlabel">
+		   <label for="age">Age</label>
+		   <input type="number" name="age" min="1" max="99" required 
+		   pattern="[1-9]{2}"
+		   title="Age is less 3 digits">
+		</fieldset>	
+		<fieldset class="inputwithlabel">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+	</fieldset>
+  <fieldset class="inputwithlabel">
+	 <input type="checkbox" name="job1" value="Job"> I am employed<br>
+  <input type="checkbox" name="job2" value="job"> I have experience
+  </fieldset>
+  <fieldset class="inputwithlabel">
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+  </fieldset>
+  <fieldset class="inputwithlabel">
+  <input type="color" name="favcolor">
+  </fieldset>
+  <fieldset class="inputwithlabel">
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+  </fieldset>
+  <fieldset class="inputwithlabel">
+  Select a time:
+  <input type="time" name="usr_time">
+  </fieldset>
+  <fieldset class="buttonHolder">
+	<input type="submit" value="Submit">
+	<input type="reset">
+  </fieldset>
+  </div>
+		</form>
+		</div> <!-- end of contact-form -->
+		</body>
+</html>
