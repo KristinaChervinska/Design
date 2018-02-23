@@ -1,0 +1,48 @@
+		<!DOCTYPE html>
+        <html>
+        <head>
+		<title>Арифметика</title>
+		</head>
+		<!--<link href="form.css" rel="stylesheet" type="text/css" >-->
+           <link href="Arithmetic/CSS.css" rel="stylesheet" type="text/css" >
+	         
+		<body>
+		<fieldset>
+		   <label for="num1">Введіть перше значення</label>
+		   <input type="number" id = "firstNumber" name="Значення" min="1" max="5" required 
+		   pattern="[1-5]{1}"
+		   title="Значення між 1-5">
+		</fieldset>
+	    <fieldset>
+		<select>
+           <option value="Addition">+</option>
+           <option value="Substraction">-</option>
+		   <option value="Multiplication">*</option>
+           <option value="Division">/</option>
+        </select>
+		</fieldset>
+		<fieldset>
+		   <label for="num2">Введіть друге значення</label>
+		   <input type="number" id = "secondNumber" name="Значення" min="1" max="7" required 
+		   pattern="[1-7]{1}"
+		   title="Значення між 1-7">
+		</fieldset>
+		<div class = "buttonHolder">
+            <input type="submit" value="Порахувати" onclick = "calculateSum(2,5)" , "Substract(3,5)", "Multiplicate(3,5)", "Divide(3,5)" >  
+        </div>	
+		<div class = "buttonHolder">
+            <input type="submit" value="Порахувати віднімання" onclick = "Substract(3,5)">  
+        </div>
+		<div class = "buttonHolder">
+            <input type="submit" value="Порахувати множення" onclick = "Multiplicate(3,5)">  
+        </div>
+		<div class = "buttonHolder">
+            <input type="submit" value="Порахувати ділення" onclick = "Divide(3,5)">  
+        </div>
+		<fieldset>
+          Результат
+        <input type="number" name="calculations" id = "calculation">
+         </fieldset>
+		 <script  type="text/javascript" src="sums.js"></script>
+		</body>
+		</html>
