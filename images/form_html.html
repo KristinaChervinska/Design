@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///C:/New/form/form_html.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!--<link href="form.css" rel="stylesheet" type="text/css" >-->
+<link href="./form_html_files/CSS.css" rel="stylesheet" type="text/css">
+<script src="./form_html_files/form.js.download" type="text/javascript"></script>  
+</head>
+<body>
+
+<div id="contact-form" style="font-family: &#39;Arial Narrow&#39;, &#39;Nimbus Sans L&#39;, sans-serif;">
+     <form id="contact" method="post" action="file:///C:/New/form/form_html.html">
+	 <fieldset>
+	         
+
+		<div class="inputwithlabel">
+		<label for="" "name"=""> Name: </label><input class="inputtext cl1" type="text" name="name" id="name" pattern="[A-Z][a-z]{1,9}" oninvalid="this.setCustomValidity(&#39;Enter Name as Capitallower&#39;)" oninput="setCustomValidity(&#39;&#39;)" required=""><br>  
+		</div>
+		</fieldset>
+		<fieldset>
+		   <div class="inputwithlabel">
+			Password: <input class="inputtext cl1" type="password" name="password" id="password" required=""><br>  
+			</div>
+		<div class="inputwithlabel">
+		Re-enter Password: <input class="inputtext cl1" type="password" id="password2"><br>  
+		</div>
+		<p id="confirmError" hidden=""></p>
+		</fieldset>	
+        <fieldset>
+		   <label for="age">Age</label>
+		   <input type="number" name="age" min="1" max="99" required="" pattern="[1-9]{2}" title="Age is less 3 digits">
+		</fieldset>		
+<div class="buttonHolder">
+<input type="submit" value="Register">  
+</div>		
+		</form>
+		</div> <!-- end of contact-form --></body></html>

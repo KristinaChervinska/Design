@@ -3,15 +3,20 @@
 <head>
 <!--<link href="form.css" rel="stylesheet" type="text/css" >-->
 <link href="CSS/CSS.css" rel="stylesheet" type="text/css" >
-<script src="JS/form.js" type="text/javascript"></script>  
+<script src="JS/form1.js" type="text/javascript"></script>  
 </head>
 <body>
 
-<div id="contact-form"
-  style="font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
-     <form id= "contact" method="post" action="">
+
+<form id= "contact2" method="post" action="" onsubmit="return myFunction()" >
+Click
+<input type = "submit" value = "Click on"/> 
+</form>
+
+<div id="contact-form"   style="font-family: 'Arial Narrow', 'Nimbus Sans L', "sans-serif">
+     <form id= "contact" method="post" action="" onsubmit="return myFunction()" >
 	 <fieldset>
-	       <form name="registrationForm" action="register.jsp" onsubmit="return matchpass()" >  
+	       
 
 		<div class = "inputwithlabel">
 		<label for "name" > Name: </label><input class="inputtext cl1" type="text" name="name" id = "name" pattern="[A-Z][a-z]{1,9}" oninvalid="this.setCustomValidity('Enter Name as Capitallower')" oninput="setCustomValidity('')" required/><br/>  
@@ -33,7 +38,7 @@
 		   title="Age is less 3 digits">
 		</fieldset>		
 <div class = "buttonHolder">
-<input type="submit" value="Register">  
+<input type="submit" value="Порахувати">  
 </div>		
 		</form>
 		</div> <!-- end of contact-form -->
