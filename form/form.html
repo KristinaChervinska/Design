@@ -4,9 +4,11 @@
 <head>
    <meta charset="UTF-8" />
 <title>Form</title>
-	<link rel="stylesheet" type="text/css" href="./css/form.css">
+	<link rel="stylesheet" type="text/css" href="./css/form.css">	
+	<!-- <script src="form.js"></script>	 -->
 </head>
 <body>
+<div onclick='alert("Hello!")'>Click me!</div>
 <div id="contact-form"
   style="font-family: 'Arial Narrow', 'Nimbus Sans L', 'sans-serif'/">
      <form id="contact" method="post" action="">
@@ -34,6 +36,15 @@
 		   pattern="[1-9]{2}"
 		   title="Age is less 3 digits">
 		</fieldset>	
+    <fieldset class="inputwithlabel">
+ 	 	<label for="password" >Password</label>
+		<input type="password" id="password">
+  
+	    <label for="confirm_password">Confirm password</label>
+		<input type="password" id="confirm_password">
+		<span id="password_error"></span>
+    </fieldset>
+	
 		<fieldset class="inputwithlabel">
   <input type="radio" name="gender" value="male" checked> Male<br>
   <input type="radio" name="gender" value="female"> Female<br>
@@ -67,5 +78,7 @@
   </div>
 		</form>
 		</div> <!-- end of contact-form -->
+			<script src="form.js"></script>	
+
 		</body>
 </html>
