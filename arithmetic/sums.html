@@ -7,15 +7,15 @@
            <link href="./CSS.css" rel="stylesheet" type="text/css" >
 	         
 		<body>
-<table>
-  <tr>
-    <th>перше значення</th>
-    <th>Операція</th>
-    <th>друге значення</th>
-    <th></th>
-    <th>результат</th>
-  </tr>
-  <tr>
+     <table>
+    <tr>
+        <th>перше значення</th>
+        <th>Операція</th>
+        <th>друге значення</th>
+        <th></th>
+         <th>результат</th>
+    </tr>
+    <tr>
     <td>
 		<input type="number" id = "firstNumber" name="Значення" min="1" max="5" required 
 		   pattern="[1-5]{1}"
@@ -30,7 +30,7 @@
         </select>	
 	</td>
     <td>
-	<input type="number" id = "secondNumber" name="Значення" min="1" max="7" required 
+	    <input type="number" id = "secondNumber" name="Значення" min="1" max="7" required 
 		   pattern="[1-7]{1}"
 		   title="Значення між 1-7">
 	</td>
@@ -38,30 +38,21 @@
 		<input type="submit" value="Порахувати" onclick = "calculate()" >
 	</td>
     <td><input type="number" name="calculations" id = "calculation" disabled></td>
-  </tr>
-  <tr>
-     <td><input type="number" name="answer" id = "answer"></td>
-  </tr>
-</table>
+    </tr>
+    <tr>
+        <td><input type="number" name="answer" id = "answer"></td>
+    </tr>
+        </table>
      
-
-
 		<h2>JavaScript Math</h2>
-
         <p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100.</p>
-
         <p id="demo"></p>
-
-        <script>
+    <script>
          document.getElementById("demo").innerHTML =
          Math.floor(Math.random() * 100);
-         </script>
-		 
-		
-		 <p>You have clicked the button <span id='target'></span> time(s).</p>
-         <button type="button" id="count" onclick="countClicks();">Count</button>
-
-		 
-		 <script  type="text/javascript" src="./js/sums.js"></script>
-		</body>
-		</html>
+    </script>
+	
+    <script  type="text/javascript" src="./js/sums.js"></script>
+		 	
+    </body>
+    </html>

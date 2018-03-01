@@ -32,19 +32,12 @@ function calculate(){
 	
 	if (answer == result){
 		alert('answer is correct');
-	}
+		
+	}  else {alert('answer is incorrect');
+	};
+ }
 	
 	
 
-}
-function countClicks() {
-        localStorage.clickcount = (localStorage.clickcount) ? Number(localStorage.clickcount) + 1: 1;
-        update();
-}
-function update() {
-        target.innerHTML = localStorage.clickcount || 0;
-}
-update();
-count.onclick = countClicks;
 
 
