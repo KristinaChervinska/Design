@@ -7,10 +7,13 @@ function calculate(){
 	
 	let first = Number(document.getElementById("firstNumber").value);
 	let second = Number(document.getElementById("secondNumber").value);
-	let answer = Number(document.getElementById("answer").value);
+	//let answer = Number(document.getElementById("answer").value);
 	let operationInput = document.getElementById("operation");
+	let customResult = Number(document.getElementById("calculation").value);
 	var operation = operationInput.options[operationInput.selectedIndex].value;
 
+
+	
 	var result = 0;
 	switch (operation) {
 		case 'Addition':
@@ -28,16 +31,16 @@ function calculate(){
 		default:
 			alert( 'Невідома операція.' );
 	}
-	document.getElementById("calculation").value = result;
+	document.getElementById("answer").value = result;
 	
-	if (answer == result){
-		alert('Відповідь вірна!');
-		
+	if (customResult == result){
+		alert("OK");
+		//alert('Впиши відповідь!');
 	}  else {alert('Перевір відповідь!');
 	};
  }
  
- function countClicks() {
+ function clickcount() {
         localStorage.clickcount = (localStorage.clickcount) ? Number(localStorage.clickcount) + 1: 1;
         update();
 }
@@ -45,9 +48,9 @@ function update() {
         target.innerHTML = localStorage.clickcount || 0;
 }
 update();
-count.onclick = countClicks;
+count.onclick = clickcount();
 	
-	
+
 
 
 

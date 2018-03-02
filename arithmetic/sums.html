@@ -13,7 +13,7 @@
         <th>Операція</th>
         <th>друге значення</th>
         <th></th>
-         <th>результат</th>
+         <th>Напиши результат</th>
     </tr>
     <tr>
     <td>
@@ -37,21 +37,24 @@
     <td>
 		<input type="submit" value="Порахувати" onclick = "calculate()" >
 	</td>
-    <td><input type="number" name="calculations" id = "calculation" disabled></td>
+    <td><input type="number" name="calculations" id = "calculation"></td>
     </tr>
-    <tr>
+    <tr hidden>
         <td><input type="number" name="answer" id = "answer"></td>
     </tr>
         </table>
-     <p>You have clicked the button <span id='target'></span> time(s).</p>
-     <button type="button" id="count" onclick="countClicks();">Count</button>
-		<h2>JavaScript Math</h2>
-        <p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100.</p>
-        <p id="demo"></p>
-    <script>
-         document.getElementById("demo").innerHTML =
+		
+     <p>Ви натиснули таку кількість: <span id='target'></span> разів.</p>
+     <button type="button" id="count" onclick="countClicks();">Кількість вірних відповідей</button>
+	
+	 
+	 <h2>JavaScript Math</h2>
+       <p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100.</p>
+        <p id="exemple"></p>
+      <script>
+        document.getElementById("exemple").innerHTML =
          Math.floor(Math.random() * 100);
-    </script>
+      </script>
 	
     <script  type="text/javascript" src="./js/sums.js"></script>
 		 	
