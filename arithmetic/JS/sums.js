@@ -31,11 +31,21 @@ function calculate(){
 	document.getElementById("calculation").value = result;
 	
 	if (answer == result){
-		alert('answer is correct');
+		alert('Відповідь вірна!');
 		
-	}  else {alert('answer is incorrect');
+	}  else {alert('Перевір відповідь!');
 	};
  }
+ 
+ function countClicks() {
+        localStorage.clickcount = (localStorage.clickcount) ? Number(localStorage.clickcount) + 1: 1;
+        update();
+}
+function update() {
+        target.innerHTML = localStorage.clickcount || 0;
+}
+update();
+count.onclick = countClicks;
 	
 	
 
