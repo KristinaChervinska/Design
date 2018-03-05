@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8" />
+	<title>Арифметика</title>
+	<!--<link href="form.css" rel="stylesheet" type="text/css" >-->
+	<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script type="text/javascript" src="./js/sums.js"></script>	
+	
+	<link href="./CSS.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+     <table>
+    <tr>
+        <th>перше значення</th>
+        <th>Операція</th>
+        <th>друге значення</th>
+        <th></th>
+         <th>Напиши результат</th>
+    </tr>
+    <tr>
+    <td>
+		<input type="number" id = "firstNumber" name="Значення" min="1" max="5" required 
+		   pattern="[1-5]{1}"
+		   title="Значення між 1-5">
+	</td>
+    <td>
+		<select id="operation">
+           <option value="Addition">+</option>
+           <option value="Substraction">-</option>
+		   <option value="Multiplication">*</option>
+           <option value="Division">/</option>
+        </select>	
+	</td>
+    <td>
+	    <input type="number" id = "secondNumber" name="Значення" min="1" max="7" required 
+		   pattern="[1-7]{1}"
+		   title="Значення між 1-7">
+	</td>
+    <td>
+		<input type="submit" value="Порахувати" onclick = "calculate()" >
+	</td>
+    <td><input type="number" name="calculations" id = "calculation"></td>
+    </tr>
+    <tr hidden>
+        <td><input type="number" name="answer" id = "answer"></td>
+    </tr>
+        </table>
+		
+     <p>Кількість вірних відповідей: <span id='correctCount' class="count"></span></p>
+     <p>Кількість помилок: <span id='wrongCount' class="count"></span></p>
+     <!-- <button type="button" id="count" onclick="countClicks();">Кількість вірних відповідей</button> -->
+	
+	 <button type="button" id="hideMath">Click Me</button>
+	 <div id="math">
+	 <h2>JavaScript Math</h2>
+       <p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100.</p>
+        <p id="exemple"></p>
+      <script>
+        document.getElementById("exemple").innerHTML =
+         Math.floor(Math.random() * 100);
+      </script>
+	 </div>
+	 	
+    </body>
+    </html>

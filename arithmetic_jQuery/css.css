@@ -1,0 +1,39 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input, select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	 font-size:24px;
+	 }
+
+body{
+	}
+	
+.count {
+	color: red;
+	font-size: 2em;
+	text-decoration: bold;
+}
+
+#firstNumber { color: tomato;}
+	
