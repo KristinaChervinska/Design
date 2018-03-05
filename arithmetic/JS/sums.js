@@ -33,22 +33,37 @@ function calculate(){
 	}
 	document.getElementById("answer").value = result;
 	
-	if (customResult == result){
-		alert("OK");
-		//alert('Впиши відповідь!');
-	}  else {alert('Перевір відповідь!');
-	};
+	
+	if (customResult == result) {
+		correctAnswer();
+	} else {
+		wrongAnswer();
+	}
  }
  
- function clickcount() {
-        localStorage.clickcount = (localStorage.clickcount) ? Number(localStorage.clickcount) + 1: 1;
-        update();
+ function correctAnswer(){
+	 
+//		alert("OK");
+        localStorage.correctAnswers = (localStorage.correctAnswers) ? Number(localStorage.correctAnswers) + 1 : 1;
+		update();
 }
+
+ function wrongAnswer(){
+//		alert("wrong answer");
+        localStorage.wrongAnswers = (localStorage.wrongAnswers) ? Number(localStorage.wrongAnswers) + 1 : 1;
+		update();
+}
+
+
 function update() {
-        target.innerHTML = localStorage.clickcount || 0;
+	    var correctCount = document.getElementById("correctCount");
+        correctCount.innerHTML = localStorage.correctAnswers || 0;
+		
+		var wrongCount = document.getElementById("wrongCount");
+        wrongCount.innerHTML = localStorage.wrongAnswers || 0;
 }
 update();
-count.onclick = clickcount();
+
 	
 
 

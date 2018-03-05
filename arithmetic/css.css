@@ -28,6 +28,12 @@ input, select {
 
 body{
 	}
+	
+.count {
+	color: red;
+	font-size: 2em;
+	text-decoration: bold;
+}
 
 
 	
