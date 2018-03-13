@@ -62,10 +62,14 @@ function update() {
 		var wrongCount = document.getElementById("wrongCount");
         wrongCount.innerHTML = localStorage.wrongAnswers || 0;
 }
-update();
 
+
+function myFunction() {	
+alert("Clear");
+	localStorage.removeItem("correctAnswers");
+	localStorage.removeItem("wrongAnswers");
+    update();
 	
+}
 
-
-
-
+update();
