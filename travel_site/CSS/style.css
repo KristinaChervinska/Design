@@ -1,0 +1,35 @@
+.debug div{
+
+}
+  
+ .header{
+	 width:100%;
+ }
+ .navigation{
+	 width:100%;
+	 clear:left;
+ }
+ .mainBody{
+	 width:100%;
+	 clear:left;
+ }
+.columnLeft{
+	width: 25%;
+	float: left;
+}
+.columnMid{
+	width: 74%;
+	float: left;
+}
+.columnMid div img{
+	max-height: 100px;
+}
+.columnMid div {
+	min-height: 120px;
+}
+
+ .footer{
+	 width:100%;
+	 clear:left;
+	 height: 150px;
+ }
