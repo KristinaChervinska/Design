@@ -24,7 +24,14 @@
 .columnMid div img{
 	max-height: 100px;
 	margin: 10px;
-}
+    max-width: 150px;
+	}
+.authorPhoto {
+	max-height: 200px;
+	margin: 10px;
+    max-width: 250px;
+	}
+	
 .columnMid div {
 	min-height: 120px;
 }
